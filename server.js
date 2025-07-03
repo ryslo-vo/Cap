@@ -4,7 +4,7 @@ const axios = require('axios');
 const NEXTCAPTCHA_API_KEY = 'next_f0cbbff92735399d23e80e9ff316f5ca48';
 
 async function getSitekeyAndCookies(uid) {
-    const url = `https://verify.poketwo.net/captcha/1384147640664592396`;
+    const url = `https://verify.poketwo.net/captcha/${uid}`;
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
