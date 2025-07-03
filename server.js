@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const axios = require('axios');
 
-const NEXTCAPTCHA_API_KEY = 'YOUR_NEXTCAPTCHA_API_KEY';
+const NEXTCAPTCHA_API_KEY = 'next_f0cbbff92735399d23e80e9ff316f5ca48';
 
 async function getSitekeyAndCookies(uid) {
     const url = `https://verify.poketwo.net/captcha/${uid}`;
